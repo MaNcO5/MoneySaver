@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rename" type="id">menu_rename</item>
+    <item name="share" type="id">menu_share</item>
+    <item name="remove" type="id">menu_remove</item>
+</resources>

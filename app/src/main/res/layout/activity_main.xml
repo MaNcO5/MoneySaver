@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:layout="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|start">
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent">
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="500dp"
+                        android:id="@+id/scrollView">
+
+                    </ScrollView>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginBottom="52dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        layout:backgroundTint="?attr/colorBackgroundFloating"
+                        layout:rippleColor="@color/colorPrimary"
+                        android:src="@android:drawable/ic_input_add"/>
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:id="@+id/listView"
+                        android:textFilterEnabled="true"
+                        android:textColor="#e6e6e6"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:layout_height="280dp"
+                        android:layout_above="@+id/fab"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+</LinearLayout>

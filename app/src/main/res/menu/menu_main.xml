@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.manco.moneysaver1.MainActivity">
+    <item
+        android:id="@+id/create"
+        android:title="Change User"
+        app:showAsAction="never"
+        />
+</menu>
